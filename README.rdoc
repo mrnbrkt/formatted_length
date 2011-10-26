@@ -10,5 +10,7 @@ For instance:
 
 The integer field defaults to :length, but can be altered by acts_as_formatted_length, :field => YOUR_FIELD_GOES_HERE
 
+If you require a setter, pass :setter => true. The setter function accpets strings in following manner: If not formatted as a length (no ':'), the value is treated as length in seconds. If is formatted, value is deformatted into correct amount of seconds (i.e. "1:01:06" => 3666)
+
 Cheers
 Meron Bareket
