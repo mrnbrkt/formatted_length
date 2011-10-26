@@ -1,0 +1,14 @@
+= FormattedLength
+
+Project uses MIT-LICENSE. 
+For classes that acts_as_formatted_length, it adds instance function formatted_length, that converts lenght represented in seconds to a string.
+For instance:
+0 => 00:00
+10 => 00:10
+70 => 01:10
+3666 => 1:01:06
+
+The integer field defaults to :length, but can be altered by acts_as_formatted_length, :field => YOUR_FIELD_GOES_HERE
+
+Cheers
+Meron Bareket
