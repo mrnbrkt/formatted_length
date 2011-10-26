@@ -11,9 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111026123424) do
+ActiveRecord::Schema.define(:version => 20111026144756) do
 
   create_table "model_with_default_length_fields", :force => true do |t|
+    t.integer  "length"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "model_with_length_field_and_setters", :force => true do |t|
     t.integer  "length"
     t.datetime "created_at"
     t.datetime "updated_at"
