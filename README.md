@@ -53,5 +53,14 @@ puts example.foobar  # prints out 3666
 ## License
 Project uses MIT-LICENSE. 
 
-Cheers
+## Contribution
+Feel free, by all means! 
+1. Fork
+2. Fix
+3. Rebase
+4. Push
+5. File pull request
+
+Cheers,
+
 Meron Bareket
