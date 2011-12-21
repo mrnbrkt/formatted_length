@@ -56,10 +56,10 @@ Project uses MIT-LICENSE.
 ## Contribution
 Feel free, by all means! 
 1. Fork
-2. Fix
-3. Rebase
-4. Push
-5. File pull request
+1. Fix
+1. Rebase
+1. Push
+1. File pull request
 
 Cheers,
 
