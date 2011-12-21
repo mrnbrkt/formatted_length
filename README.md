@@ -44,6 +44,7 @@ puts example.foobar  # prints out 3666
 
 ## Example
 |Integer value|String Representation|
+|:----:|:-----------:|
 |0|00:00|
 |10|00:10|
 |70|01:10|
