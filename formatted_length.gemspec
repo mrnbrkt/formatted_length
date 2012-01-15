@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Adds ability to present integer amount of seconds as text"
   s.description = "Adds formatted_length function to classes that acts_like_formatted_length, converting a length represented in seconds to a string"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.1.0"
