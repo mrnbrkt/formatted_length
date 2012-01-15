@@ -4,6 +4,11 @@
 Gem allows auto-formatting to/from string to time span (integer value of seconds). 
 It does so by adding an *acts_as_formatted_length* method to ActiveRecord base classes. 
 
+## Installation
+Simply add this row to your Gemfile
+```ruby
+gem 'formatted_length'
+```
 
 ## Usage
 Once *acts_as_formatted_length* is added to class definition, a _formatted_length_ property becomes available, 
