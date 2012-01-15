@@ -1,4 +1,4 @@
 rvm:
   - 1.9.2
   - 1.9.3
-script: cd test/dummy && rake db:setup && rake db:migrate && rake db:test:prepare && cd ../../ && rake
+script: cd test/dummy && rake && rake db:migrate && rake db:test:prepare && cd ../../ && rake
