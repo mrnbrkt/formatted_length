@@ -1,4 +1,4 @@
-# FormattedLength
+# FormattedLength [![Build Status](https://secure.travis-ci.org/mrnbrkt/formatted_length.png)](http://travis-ci.org/mrnbrkt/formatted_length)
 
 
 ## Description
