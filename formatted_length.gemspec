@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
+  s.add_development_dependency "rake"
   s.add_development_dependency "rspec"
   s.add_development_dependency "supermodel"
   s.add_development_dependency "fuubar"
