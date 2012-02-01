@@ -30,16 +30,15 @@ example = YourClass.create(length: 70)
 puts example.formatted_length # prints out 01:10
 ```
 
-If you require a setter, pass :setter => true. 
 The created setter accpets strings in following manner: 
-* If is integer (no ':' in string), the value is treated as length in seconds. 
+* Empty string is converted to 0, so is nil
 * Else, value is deformatted into correct amount of seconds (i.e. "1:01:06" becomes 3666)
 
 ```ruby
 #sample class definition
 class YourClass
 #implementation etc...
-acts_as_formatted_length :foobar, setter: true
+acts_as_formatted_length :foobar
 end
 
 #now usage

@@ -1,4 +1,4 @@
-require 'formatted_length/acts_as_formatted_length'
-
-module FormattedLength
-end
+require "formatted_length/version"
+require "formatted_length/formatted_length"
+require "formatted_length/model_additions"
+require "formatted_length/railtie" if defined? Rails
