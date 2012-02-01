@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
@@ -13,10 +14,15 @@ Gem::Specification.new do |s|
   s.summary     = "Adds ability to present integer amount of seconds as text"
   s.description = "Adds formatted_length function to classes that acts_like_formatted_length, converting a length represented in seconds to a string"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
-  s.test_files = Dir["test/**/*"]
+  s.rubyforge_project = "formatted_length"
 
-  s.add_dependency "rails", ">= 3.1.0"
+  s.files         = `git ls-files`.split("\n")
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.require_paths = ["lib"]
 
-  s.add_development_dependency "sqlite3"
+  # specify any dependencies here; for example:
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "fuubar"
+  # s.add_runtime_dependency "rest-client"
 end
