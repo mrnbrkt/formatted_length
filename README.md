@@ -26,24 +26,8 @@ acts_as_formatted_length :foobar
 end
 
 #now usage
-example = YourClass.create(length: 70)
+example = YourClass.create(foobar: 70)
 puts example.formatted_length # prints out 01:10
-```
-
-The created setter accpets strings in following manner: 
-* Empty string is converted to 0, so is nil
-* Else, value is deformatted into correct amount of seconds (i.e. "1:01:06" becomes 3666)
-
-```ruby
-#sample class definition
-class YourClass
-#implementation etc...
-acts_as_formatted_length :foobar
-end
-
-#now usage
-example = YourClass.create(length: 70)
-example.formatted_length # = 01:10
 example.formatted_length = "1:01:06"
 puts example.foobar  # prints out 3666
 ```
