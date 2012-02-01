@@ -5,7 +5,7 @@ module FormattedLength
     minutes = (value / 60) % 60
     seconds = value % 60
     result = "%02d" % minutes + ":%02d" % seconds
-    result = result.prepend("#{hours}:") if hours > 0
+    result = "#{hours}:#{result}" if hours > 0
     result
   end
 
